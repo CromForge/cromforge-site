@@ -24,3 +24,12 @@ Packages/manifest.json (no Firebase / analytics / crash SDK; Unity Services off)
 - The page mentions iOS / App Store; 1.0.0 is Android (iOS release is on the roadmap). Left as is.
 - The game has 6 languages now (DE/FR/IT/PT-BR too) but the policy has only EN + ES; kept as instructed.
 - docs/release/DATA_SAFETY.md says the Play Games answers must be added to the Play Data safety form too.
+
+## Play-compliant "Delete your data" section (privacy2), 2026-11-04
+- NEW section right after "The short version" / "En resumen": `id="delete-data"` (EN) and `id="borrar-datos"` (ES).
+  Names the app and developer (Purrsweeper by Crom Forge); three steps (clear storage / uninstall; Play Games app "Delete Play Games account & data" or myaccount.google.com; email support@cromforge.dev, subject "Delete my data", reply within 30 days);
+  what is deleted (everything the game stores; we keep no personal data on our servers), what Google keeps (Play purchase records; AdMob data per https://policies.google.com/technologies/retention), no refund, remove-ads restored on reinstall.
+- "Deleting it" / "Eliminarlos" in the Play Games section is now one short sentence linking to the new section.
+- "Your rights" (EN + ES) links to the new section.
+- Checked: COPY MY SAVE / PASTE A SAVE appear nowhere in the page (EN or ES); only this changelog mentions their removal.
+- Use `https://<site>/privacy/#delete-data` as the Play Data safety deletion URL.
